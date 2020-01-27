@@ -13,8 +13,20 @@
 <body>
     <?php
 
-        $users = new Test();
-        echo $users->getUserStmt("Jakub", "Stellner");
+        /*$users = new UsersView();
+        echo $users->showUser("Ivan");*/
+
+        /*$table = new TableView();
+        $table->showTables();*/
+
+        $tableView = new TableView();
+        var_dump($tableView->showTables());
+
+        $tableContr = new TableContr();
+        $tableContr->dropTable("ds");
+
+        /*$usersObj = new UsersContr();
+        $usersObj->createUser("Jane", "Doe", "1685-01-11")*/
 
     ?>
 </body>
